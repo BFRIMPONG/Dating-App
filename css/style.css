@@ -1,5 +1,6 @@
 body {
     font-family: helvetica;
+   
 }
 
 #header {
@@ -21,25 +22,34 @@ h1 {
 
 #results {
     margin: 30px 20px 10px 0px;
+    /* display: flexbox; */
+    
 }
 
 .person-row {
     margin: 10px 0px;
     padding: 10px;
-    background-color: #FDB45C;
-    width: 100%;
+    /* background-color: #FDB45C; */
+    width: 30vw;
+    height: 20vh;
     float: left;
+    /* border: 3px solid blue; */
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 
 .person-row img {
-    float: left;
+    float: center;
     margin-right: 20px;
+
+    
 }
 
 .personal-info {
     float: left;
 }
 
-.person-row > button {
+/* .person-row > button {
    float: right; 
-}
+} */
