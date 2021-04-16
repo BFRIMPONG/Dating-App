@@ -65,9 +65,11 @@ window.addEventListener('load', function() {
 
         var minAgeField = document.getElementById('min');
         var min = minAgeField.value;
+        console.log(min);
 
         var maxAgeField = document.getElementById('max');
         var max = maxAgeField.value;
+        console.log(max);
         
         //get gender
         var genderField = document.getElementById('gender');
@@ -82,7 +84,7 @@ window.addEventListener('load', function() {
             if (gender == 'A' || gender == users[i].gender) {
                 //check hobby
                 if (hobby == '' || hobby == users[i].hobby) {
-                    if ((min >= 20) && (max <= 26)) {
+                    if ((min =="" || users[i].age >= min) && (max =="" || users[i].age <= max)) {
                         resultsHtml += '<div class="person-row">\
                            <img src="images/' + users[i].avatar + '" />\
                            <div class="person-info">\
