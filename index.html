@@ -10,30 +10,36 @@
     <body>
         <div id="header"><h1>BIX Love</h1></div>
         <div id="main">
-            <div class="row">
-                <div class="search-wrapper">
+            <div class="img">
+                <div class="text">
                     <div class="row">
-                        <label>Gender</label>
-                        <select id="gender">
-                            <option value="A">All</option>
-                            <option value="F">Female</option>
-                            <option value="M">Male</option>                        
-                        </select>
+                        <div class="search-wrapper">
+                            <div class="row">
+                                <label>Gender</label>
+                                <select id="gender">
+                                    <option value="A">All</option>
+                                    <option value="F">Female</option>
+                                    <option value="M">Male</option>                        
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label>Hobbies</label>
+                                <input type="text" id="hobby" />
+                            </div>
+                            <div class="row">
+                                <label id="ageRange">Age Range</label>
+                                <input type="number" id="min" placeholder="minimum age" />
+                                <input type="number" id="max" placeholder="maximum age" />
+                            </div>
+                            <div class="row">
+                                <button id="searchBtn">Search</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <label>Hobbies</label>
-                        <input type="text" id="hobby" />
-                    </div>
-                    <div class="row">
-                        <label id="ageRange">Age Range</label>
-                        <input type="number" id="min" placeholder="minimum age" />
-                        <input type="number" id="max" placeholder="maximum age" />
-                    </div>
-                    <div class="row">
-                        <button id="searchBtn">Search</button>
-                    </div>
+
                 </div>
             </div>
+
             <div id="result-container">
                 <div id="results">
 
